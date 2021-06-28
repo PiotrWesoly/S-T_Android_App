@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/logo"
+    android:backgroundTint="@color/logo"
+    android:isScrollContainer="true"
+    android:scrollIndicators="right"
+    android:scrollbars="vertical"
+    tools:context=".Register">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Welcome"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="Welcome!"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/RegisterDesc"
+                android:layout_width="359dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="In order to sign up, you have to
+provide us with some information.
+None of the thing you enter here, will
+not be shared to third party users."
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/LoginButton"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:gravity="center"
+                    android:text="Login"
+                    android:textAlignment="center"
+                    android:textColor="#818181"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:id="@+id/SignUpButton"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:gravity="center"
+                    android:text="@string/Sign_up_underscore"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="22dp" />
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/FirstNameFill"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="First Name"
+                android:inputType="textPersonName"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+            <TextView
+                android:id="@+id/firstNameErr"
+                android:layout_width="200dp"
+                android:layout_height="17dp"
+                android:text=""
+                android:textColor="@color/red"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginLeft="50dp"
+                />
+            <EditText
+                android:id="@+id/LastNameFill"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Last Name"
+                android:inputType="textPersonName"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+            <TextView
+                android:id="@+id/lastNameErr"
+                android:layout_width="200dp"
+                android:layout_height="17dp"
+                android:text=""
+                android:textColor="@color/red"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginLeft="50dp"
+                />
+
+            <ImageView
+                android:id="@+id/enterPhoto"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@android:drawable/ic_menu_gallery"/>
+            <TextView
+                android:id="@+id/enterPhotoDesc"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:text="Upload a photo"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textAlignment="center"
+                android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/TypeFill"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Specify type 'Tutor' or 'Student'"
+                android:inputType="textPersonName"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+            <TextView
+                android:id="@+id/typeErr"
+                android:layout_width="200dp"
+                android:layout_height="17dp"
+                android:text=""
+                android:textColor="@color/red"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginLeft="50dp"
+                />
+
+            <EditText
+                android:id="@+id/UsernameFill"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Username"
+                android:inputType="textPersonName"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+            <TextView
+                android:id="@+id/usernameErr"
+                android:layout_width="200dp"
+                android:layout_height="17dp"
+                android:text=""
+                android:textColor="@color/red"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginLeft="50dp"
+                />
+            <EditText
+                android:id="@+id/EmailFill"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textPersonName"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+            <TextView
+                android:id="@+id/emailErr"
+                android:layout_width="200dp"
+                android:layout_height="17dp"
+                android:text=""
+                android:textColor="@color/red"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginLeft="50dp"
+                />
+            <EditText
+                android:id="@+id/PasswordFill"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPersonName"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+            <TextView
+                android:id="@+id/passErr"
+                android:layout_width="200dp"
+                android:layout_height="17dp"
+                android:text=""
+                android:textColor="@color/red"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginLeft="50dp"
+                />
+            <EditText
+                android:id="@+id/ConPasswordFill"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Confirm password"
+                android:inputType="textPersonName"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+            <TextView
+                android:id="@+id/confpassErr"
+                android:layout_width="200dp"
+                android:layout_height="17dp"
+                android:text=""
+                android:textColor="@color/red"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginLeft="50dp"
+                />
+
+            <Button
+                android:id="@+id/SignUpBtn"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:layout_gravity="center"
+                android:textColor="@color/logo"
+                android:backgroundTint="@color/white"
+                android:textSize="25dp"
+                android:text="Sign Up" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

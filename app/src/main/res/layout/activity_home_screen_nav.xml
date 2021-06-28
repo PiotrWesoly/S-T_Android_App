@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/logo"
+    tools:context=".home_screen">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--        android:layout_above="@id/bottom_navigation"-->
+
+        <ImageView
+            android:id="@+id/student_logo"
+            android:layout_width="136dp"
+            android:layout_height="146dp"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginVertical="200dp"
+            app:srcCompat="@mipmap/student_logo_foreground" />
+
+        <TextView
+            android:id="@+id/tutor_text"
+            android:layout_width="134dp"
+            android:layout_height="35dp"
+            android:layout_marginHorizontal="230dp"
+            android:layout_marginVertical="340dp"
+            android:text="TUTORS"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/student_text"
+            android:layout_width="134dp"
+            android:layout_height="35dp"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginVertical="340dp"
+            android:text="STUDENTS"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/lookFor_text"
+            android:layout_width="334dp"
+            android:layout_height="64dp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginVertical="150dp"
+            android:text="SEARCH FOR.."
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="36dp" />
+
+        <ImageView
+            android:id="@+id/tutor_logo"
+            android:layout_width="136dp"
+            android:layout_height="146dp"
+            android:layout_marginHorizontal="230dp"
+            android:layout_marginVertical="200dp"
+            app:srcCompat="@mipmap/logo_foreground" />
+
+        <ImageView
+            android:layout_width="330dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="400dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/schedule_home_foreground" />
+
+        <TextView
+            android:id="@+id/schedule_text"
+            android:layout_width="134dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="150dp"
+            android:layout_marginVertical="550dp"
+            android:text="SCHEDULE"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+        <!--        <Button-->
+        <!--            android:id="@+id/tutor_button"-->
+        <!--            android:layout_width="136dp"-->
+        <!--            android:layout_height="146dp"-->
+        <!--            android:layout_marginHorizontal="230dp"-->
+        <!--            android:layout_marginVertical="200dp"-->
+        <!--            tools:visibility="invisible" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/timetable_text"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="64dp"-->
+        <!--            android:layout_marginHorizontal="0dp"-->
+        <!--            android:layout_marginVertical="400dp"-->
+        <!--            android:text="Check your timetable"-->
+        <!--            android:textAlignment="center"-->
+        <!--            android:textSize="36dp" />-->
+
+    </FrameLayout>
+</RelativeLayout>

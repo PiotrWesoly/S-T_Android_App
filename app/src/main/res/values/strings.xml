@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">S&amp;T</string>
+    <string name="Login_underscore"><u>Login</u></string>
+    <string name="Sign_up_underscore"><u>Sign up</u></string>
+
+    <string-array name="sort">
+        <item>Sort by</item>
+        <item>Name ascending</item>
+        <item>Name descending</item>
+        <item>Rating ascending</item>
+        <item>Rating descending</item>
+        <item>Cost ascending</item>
+        <item>Cost descending</item>
+    </string-array>
+    <string-array name="filter">
+        <item>Subject</item>
+        <item>Math</item>
+        <item>Physics</item>
+        <item>Programming</item>
+        <item>Biology</item>
+        <item>English</item>
+    </string-array>
+    <string-array name="city">
+        <item>City</item>
+        <item>Lisbon</item>
+        <item>Porto</item>
+        <item>Coimbra</item>
+        <item>Aveiro</item>
+    </string-array>
+
+</resources>

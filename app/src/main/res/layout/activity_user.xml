@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/phone_button"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:textAlignment="center"
+    tools:context=".user_activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/profilePic"
+                android:layout_width="match_parent"
+                android:layout_height="417dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:text="Mark, 18"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:text="Looking for a math tutor"
+                />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="229dp"
+                android:layout_height="41dp"
+                android:layout_gravity="center"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:scaleX="0.6"
+                android:scaleY="0.6"
+                android:theme="@style/RatingBar" />
+            <TextView
+                android:id="@+id/LongDesc"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:justificationMode="inter_word"
+                android:layout_marginTop="2dp"
+                android:text="Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description "
+                />
+            <TextView
+                android:id="@+id/Price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:textSize="18dp"
+                android:textColor="#AAA5A5"
+                android:text="Price: 20€/h"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/phoneBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="684dp"
+        android:layout_marginBottom="33dp"
+        android:backgroundTint="#2D9F25"
+        android:text="Phone number"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/messBtn"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="684dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="33dp"
+        android:layout_toEndOf="@+id/phoneBtn"
+        android:backgroundTint="#DCC81D"
+        android:text="Message"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+</RelativeLayout>

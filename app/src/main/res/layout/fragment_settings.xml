@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:backgroundTint="#FFFFFF"
+    android:isScrollContainer="false"
+    android:scrollbarThumbHorizontal="@color/white">
+
+    <ImageView
+        android:id="@+id/top_bar_messages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/logo" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="330dp"
+        android:layout_height="314dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="107dp"
+        app:srcCompat="@android:drawable/toast_frame" />
+
+    <ToggleButton
+        android:id="@+id/hide_profile"
+        android:layout_width="170dp"
+        android:layout_height="79dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="224dp"
+        android:layout_marginBottom="532dp"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical|center_horizontal"
+        android:textOff="Hide profile"
+        android:textOn="Show profile" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="73dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="646dp"
+        android:fontFamily="sans-serif"
+        android:text="Settings"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
+
+    <ToggleButton
+        android:id="@+id/mute_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="220dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="534dp"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical|center_horizontal"
+        android:textOff="Mute notifications"
+        android:textOn="Turn on notification" />
+
+    <Button
+        android:id="@+id/signOut"
+        android:layout_width="wrap_content"
+        android:layout_height="69dp"
+        android:textColor="@color/white"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="437dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="230dp"
+        android:backgroundTint="@color/logo"
+        android:text="Sign out" />
+
+    <Button
+        android:id="@+id/delete_account"
+        android:layout_width="wrap_content"
+        android:layout_height="69dp"
+        android:textColor="@color/white"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="531dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="137dp"
+        android:backgroundTint="@color/logo"
+        android:text="Delete Account" />
+
+    <Button
+        android:id="@+id/edit_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="69dp"
+        android:textColor="@color/white"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="344dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="324dp"
+        android:backgroundTint="@color/logo"
+        android:text="Edit Profile" />
+
+
+</RelativeLayout>
